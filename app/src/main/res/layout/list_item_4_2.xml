@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:id="@+id/gl_collage_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+            android:id="@+id/iv0"
+            android:layout_width="@dimen/side_m"
+            android:layout_height="@dimen/side_l"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="3" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="@dimen/side_s"
+            android:layout_height="@dimen/side_s" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="@dimen/side_s"
+            android:layout_height="@dimen/side_s" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="@dimen/side_s"
+            android:layout_height="@dimen/side_s" />
+
+    </GridLayout>
+
+</RelativeLayout>
